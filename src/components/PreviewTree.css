@@ -1,0 +1,15 @@
+.preview {
+  margin-top: 40px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.preview h2 {
+  margin-bottom: 20px;
+}
+
+.preview-item {
+  margin-left: 20px;
+  margin-top: 15px;
+}

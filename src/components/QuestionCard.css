@@ -1,0 +1,50 @@
+.question-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  border-left: 5px solid #019961;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-card input,
+.question-card select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.child-btn {
+  margin-top: 15px;
+  padding: 10px 14px;
+  border: none;
+  background: #222;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.delete-btn {
+  background: red;
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.children {
+  margin-left: 40px;
+  margin-top: 20px;
+}

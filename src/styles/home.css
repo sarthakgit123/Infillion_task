@@ -1,0 +1,30 @@
+.home {
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.add-btn,
+.submit-btn {
+  padding: 12px 18px;
+  border: none;
+  background: #019961;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+}
