@@ -1,4 +1,4 @@
-# Nested Question Form Builder
+<img width="1920" height="975" alt="image" src="https://github.com/user-attachments/assets/aaed8916-796e-46f6-9567-916c4d51cea4" /># Nested Question Form Builder
 
 A modern dynamic nested questionnaire builder developed using React.js.
 
@@ -163,8 +163,8 @@ src/
 ```text
 /screenshots/questions.png
 ```
+<img width="1920" height="955" alt="image" src="https://github.com/user-attachments/assets/8a6c6d18-e673-4b2c-9ecf-a3a915b92c71" />
 
-![Questions](./screenshots/questions.png)
 
 ---
 
@@ -176,7 +176,10 @@ src/
 /screenshots/nested.png
 ```
 
-![Nested Questions](./screenshots/nested.png)
+<img width="1910" height="955" alt="image" src="https://github.com/user-attachments/assets/8fa60a8d-ee4a-49be-8bda-628d71da4d05" />
+
+
+
 
 ---
 
@@ -188,21 +191,11 @@ src/
 /screenshots/dragdrop.png
 ```
 
-![Drag Drop](./screenshots/dragdrop.png)
+<img width="1920" height="963" alt="image" src="https://github.com/user-attachments/assets/123e220a-1002-4209-8b08-150d95f75c98" />
+
 
 ---
 
-## Live Preview Panel
-
-> Add screenshot here
-
-```text
-/screenshots/preview.png
-```
-
-![Preview](./screenshots/preview.png)
-
----
 
 # Installation
 
