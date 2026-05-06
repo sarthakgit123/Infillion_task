@@ -1,16 +1,279 @@
-# React + Vite
+# Nested Question Form Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern dynamic nested questionnaire builder developed using React.js.
 
-Currently, two official plugins are available:
+This project was built as part of the Infollion Software Developer Intern Assessment. The application allows users to dynamically create parent and child questions recursively with drag-and-drop support, hierarchical numbering, live preview, and local storage persistence.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Dynamic Question Creation
 
-## Expanding the ESLint configuration
+- Add unlimited parent questions dynamically
+- Add nested child questions recursively
+- Infinite recursive nesting support
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Question Types
+
+Each question supports:
+
+- Short Answer
+- True / False
+
+When a question is set to **True / False**, users can dynamically add child questions.
+
+---
+
+## Hierarchical Auto Numbering
+
+Questions are automatically numbered based on nesting level.
+
+Examples:
+
+```text
+Q1
+Q1.1
+Q1.1.1
+Q2
+Q2.1
+```
+
+---
+
+## Drag and Drop Reordering
+
+Implemented drag-and-drop reordering for parent questions using:
+
+```text
+@hello-pangea/dnd
+```
+
+Users can:
+- reorder parent questions
+- visually rearrange form structure
+- dynamically update numbering
+
+---
+
+## Delete Functionality
+
+- Delete parent questions
+- Delete nested child questions
+- Recursive child cleanup support
+
+---
+
+## Live Preview Panel
+
+A real-time preview panel displays:
+- nested hierarchy
+- numbering structure
+- recursive question tree
+
+---
+
+## Local Storage Persistence
+
+The form automatically saves to browser local storage.
+
+Users can:
+- refresh the page
+- close and reopen browser
+- continue without losing progress
+
+---
+
+# Modern UI Features
+
+- Glassmorphism design
+- Responsive layout
+- Dashboard-style interface
+- Drag handles
+- Smooth shadows and spacing
+- Modern typography
+- Sticky preview panel
+
+---
+
+# Tech Stack
+
+| Technology | Usage |
+|---|---|
+| React.js | Frontend Framework |
+| Context API | Global State Management |
+| useReducer | Complex State Handling |
+| Vite | Build Tool |
+| Lucide React | Icons |
+| NanoID | Unique IDs |
+| @hello-pangea/dnd | Drag and Drop |
+| CSS3 | Styling |
+
+---
+
+# Project Structure
+
+```bash
+src/
+│
+├── components/
+│   ├── QuestionCard.jsx
+│   ├── QuestionCard.css
+│   ├── PreviewTree.jsx
+│   ├── PreviewTree.css
+│
+├── context/
+│   ├── QuestionContext.jsx
+│
+├── reducers/
+│   ├── questionReducer.js
+│
+├── utils/
+│   ├── reccrussivehelpers.js
+│
+├── App.jsx
+├── App.css
+├── index.css
+├── main.jsx
+```
+
+---
+
+# Screenshots
+
+## Home Page
+
+> Add screenshot here
+
+```text
+/screenshots/home.png
+```
+
+![Home Page](./screenshots/home.png)
+
+---
+
+## Adding Questions
+
+> Add screenshot here
+
+```text
+/screenshots/questions.png
+```
+
+![Questions](./screenshots/questions.png)
+
+---
+
+## Nested Child Questions
+
+> Add screenshot here
+
+```text
+/screenshots/nested.png
+```
+
+![Nested Questions](./screenshots/nested.png)
+
+---
+
+## Drag and Drop Reordering
+
+> Add screenshot here
+
+```text
+/screenshots/dragdrop.png
+```
+
+![Drag Drop](./screenshots/dragdrop.png)
+
+---
+
+## Live Preview Panel
+
+> Add screenshot here
+
+```text
+/screenshots/preview.png
+```
+
+![Preview](./screenshots/preview.png)
+
+---
+
+# Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sarthakgit123/Infillion_task.git
+```
+
+Move into project folder:
+
+```bash
+cd Infillion_task/nested-form-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+---
+
+# Assessment Features Covered
+
+## Core Requirements
+
+- Dynamic parent questions
+- Nested child questions
+- Recursive rendering
+- Auto numbering
+- Delete functionality
+- Form preview
+- Conditional child questions
+
+---
+
+## Bonus Features
+
+- Local storage persistence
+- Drag-and-drop reordering
+- Modern responsive UI
+
+---
+
+# Future Improvements
+
+Potential future upgrades:
+
+- Dark mode
+- Framer Motion animations
+- Backend integration
+- Export to JSON
+- Form validation
+- Nested drag-and-drop
+
+---
+
+# GitHub Repository
+
+Repository Link:
+
+https://github.com/sarthakgit123/Infillion_task
+
+---
+
+# Author
+
+Sarthak Kumar Seth
