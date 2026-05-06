@@ -151,7 +151,8 @@ src/
 /screenshots/home.png
 ```
 
-![Home Page](./screenshots/home.png)
+<img width="1920" height="958" alt="image" src="https://github.com/user-attachments/assets/40856ba4-ebfd-4baa-b770-f7f5fecfe31a" />
+
 
 ---
 
