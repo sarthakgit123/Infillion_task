@@ -1,15 +1,158 @@
-.preview {
-  margin-top: 40px;
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
+/* =========================
+   PREVIEW TREE MAIN
+========================= */
+
+.preview-tree {
+  background: #ffffff;
+  margin-top: 50px;
+  padding: 35px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
-.preview h2 {
-  margin-bottom: 20px;
+/* =========================
+   TITLE
+========================= */
+
+.preview-tree-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 35px;
 }
 
-.preview-item {
-  margin-left: 20px;
-  margin-top: 15px;
+/* =========================
+   TREE ITEM
+========================= */
+
+.tree-item {
+  position: relative;
+  margin-bottom: 22px;
+  padding-left: 28px;
+}
+
+/* Vertical connector line */
+
+.tree-item::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #dbe4ee;
+}
+
+/* Circle node */
+
+.tree-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #10b981;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 2px #10b981;
+}
+
+/* =========================
+   QUESTION CARD
+========================= */
+
+.tree-content {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 20px 24px;
+  transition: 0.3s ease;
+}
+
+.tree-content:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+   QUESTION TEXT
+========================= */
+
+.tree-question {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+/* =========================
+   QUESTION TYPE BADGE
+========================= */
+
+.question-type {
+  display: inline-block;
+  margin-top: 14px;
+  background: #d1fae5;
+  color: #065f46;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* =========================
+   CHILD QUESTIONS
+========================= */
+
+.tree-children {
+  margin-top: 18px;
+  margin-left: 40px;
+  padding-left: 22px;
+  border-left: 2px dashed #cbd5e1;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty-preview {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.empty-preview h3 {
+  font-size: 28px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.empty-preview p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .preview-tree {
+    padding: 22px;
+  }
+
+  .preview-tree-title {
+    font-size: 28px;
+  }
+
+  .tree-question {
+    font-size: 16px;
+  }
+
+  .tree-children {
+    margin-left: 18px;
+    padding-left: 14px;
+  }
 }

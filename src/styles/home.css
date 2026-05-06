@@ -1,30 +1,240 @@
+/* =========================
+   HOME PAGE
+========================= */
+
 .home {
+  width: 100%;
   min-height: 100vh;
-  padding: 40px;
+  padding: 60px 20px;
 }
 
-.container {
-  max-width: 900px;
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.home-container {
+  max-width: 1100px;
   margin: auto;
 }
 
-h1 {
-  margin-bottom: 20px;
-  color: #222;
+/* =========================
+   HERO SECTION
+========================= */
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 40px;
+  gap: 20px;
 }
 
-.add-btn,
-.submit-btn {
-  padding: 12px 18px;
-  border: none;
-  background: #019961;
+/* =========================
+   TITLE SECTION
+========================= */
+
+.title-section h1 {
+  font-size: 52px;
+  font-weight: 900;
+  color: #0f172a;
+  line-height: 1.1;
+}
+
+.title-section p {
+  margin-top: 14px;
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 650px;
+}
+
+/* =========================
+   ACTION BUTTON
+========================= */
+
+.add-question-btn {
+  background: linear-gradient(
+    135deg,
+    #10b981,
+    #14b8a6
+  );
+
   color: white;
-  border-radius: 8px;
+  border: none;
+
+  padding: 16px 24px;
+
+  border-radius: 18px;
+
+  font-size: 16px;
+  font-weight: 700;
+
   cursor: pointer;
-  margin-bottom: 20px;
-  font-size: 15px;
+
+  transition: 0.3s ease;
+
+  box-shadow:
+    0 10px 25px rgba(16, 185, 129, 0.25);
 }
 
+.add-question-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 16px 35px rgba(16, 185, 129, 0.35);
+}
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.form-section {
+  background: rgba(255, 255, 255, 0.7);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  border-radius: 30px;
+
+  padding: 35px;
+
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+   FORM ACTIONS
+========================= */
+
+.form-actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
 .submit-btn {
-  margin-top: 20px;
+  background: #0f172a;
+  color: white;
+
+  border: none;
+
+  padding: 16px 24px;
+
+  border-radius: 16px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #020617;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   RESET BUTTON
+========================= */
+
+.reset-btn {
+  background: white;
+
+  border: 1px solid #cbd5e1;
+
+  padding: 16px 24px;
+
+  border-radius: 16px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.reset-btn:hover {
+  background: #f8fafc;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   PREVIEW SECTION
+========================= */
+
+.preview-wrapper {
+  margin-top: 45px;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty-home {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.empty-home h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.empty-home p {
+  font-size: 17px;
+  color: #64748b;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .home-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title-section h1 {
+    font-size: 40px;
+  }
+
+  .title-section p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .home {
+    padding: 30px 14px;
+  }
+
+  .title-section h1 {
+    font-size: 34px;
+  }
+
+  .form-section {
+    padding: 22px;
+    border-radius: 22px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .submit-btn,
+  .reset-btn,
+  .add-question-btn {
+    width: 100%;
+  }
 }

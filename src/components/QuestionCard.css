@@ -1,50 +1,172 @@
+/* =========================
+   QUESTION CARD
+========================= */
+
 .question-card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  margin-top: 20px;
-  border-left: 5px solid #019961;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  margin-top: 24px;
+  border-left: 5px solid #10b981;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
 }
+
+.question-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   HEADER
+========================= */
 
 .question-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 22px;
 }
 
-.question-card input,
-.question-card select {
-  width: 100%;
-  padding: 12px;
-  margin-top: 15px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+.question-header h3 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
 }
 
-.child-btn {
-  margin-top: 15px;
-  padding: 10px 14px;
-  border: none;
-  background: #222;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
+/* =========================
+   DELETE BUTTON
+========================= */
 
 .delete-btn {
-  background: red;
+  width: 44px;
+  height: 44px;
   border: none;
+  border-radius: 14px;
+  background: #ef4444;
   color: white;
-  padding: 8px;
-  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
+.delete-btn:hover {
+  background: #dc2626;
+  transform: scale(1.05);
+}
+
+/* =========================
+   INPUT FIELD
+========================= */
+
+.question-card input {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 16px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+  margin-bottom: 18px;
+}
+
+.question-card input:focus {
+  border-color: #10b981;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+}
+
+/* =========================
+   SELECT FIELD
+========================= */
+
+.question-card select {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 16px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.question-card select:focus {
+  border-color: #10b981;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+}
+
+/* =========================
+   ADD CHILD BUTTON
+========================= */
+
+.child-btn {
+  margin-top: 18px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.child-btn:hover {
+  background: #059669;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   CHILD CONTAINER
+========================= */
+
 .children {
-  margin-left: 40px;
-  margin-top: 20px;
+  margin-top: 24px;
+  margin-left: 35px;
+  padding-left: 22px;
+  border-left: 2px dashed #cbd5e1;
+}
+
+/* =========================
+   NESTED CARD STYLING
+========================= */
+
+.children .question-card {
+  background: #f8fafc;
+  border-left: 4px solid #14b8a6;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+  .question-card {
+    padding: 20px;
+  }
+
+  .question-header h3 {
+    font-size: 22px;
+  }
+
+  .children {
+    margin-left: 18px;
+    padding-left: 14px;
+  }
+
+  .child-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
