@@ -1,4 +1,4 @@
-<img width="1920" height="975" alt="image" src="https://github.com/user-attachments/assets/aaed8916-796e-46f6-9567-916c4d51cea4" /># Nested Question Form Builder
+### Nested Question Form Builder
 
 A modern dynamic nested questionnaire builder developed using React.js.
 
