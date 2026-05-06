@@ -264,3 +264,93 @@
     width: 100%;
   }
 }
+/* =========================
+   TWO PANEL LAYOUT
+========================= */
+
+.content-layout {
+  display: grid;
+
+  grid-template-columns:
+    1.3fr 0.7fr;
+
+  gap: 30px;
+
+  align-items: start;
+}
+
+/* =========================
+   BUILDER SECTION
+========================= */
+
+.builder-section {
+  width: 100%;
+}
+
+/* =========================
+   PREVIEW SECTION
+========================= */
+
+.preview-section {
+  position: sticky;
+  top: 40px;
+}
+
+/* =========================
+   PREVIEW CARD
+========================= */
+
+.preview-tree {
+  margin-top: 0 !important;
+
+  background: rgba(255,255,255,0.75);
+
+  backdrop-filter: blur(16px);
+
+  border-radius: 28px;
+
+  border: 1px solid rgba(255,255,255,0.5);
+
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.06);
+}
+
+/* =========================
+   SMALLER QUESTION CARDS
+========================= */
+
+.question-card {
+  padding: 24px !important;
+}
+
+/* =========================
+   SMALLER INPUTS
+========================= */
+
+.question-card input,
+.question-card select {
+  padding: 14px 16px !important;
+}
+
+/* =========================
+   BUTTON IMPROVEMENT
+========================= */
+
+.primary-btn {
+  width: fit-content;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+  .content-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-section {
+    position: static;
+  }
+}

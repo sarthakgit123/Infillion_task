@@ -5,12 +5,25 @@ import {
 } from "../utils/reccrussivehelpers";
 
 const questionReducer = (state, action) => {
+
   switch (action.type) {
+
+    /* =========================
+       ADD PARENT
+    ========================= */
+
     case "ADD_PARENT":
       return {
         ...state,
-        questions: [...state.questions, action.payload],
+        questions: [
+          ...state.questions,
+          action.payload,
+        ],
       };
+
+    /* =========================
+       ADD CHILD
+    ========================= */
 
     case "ADD_CHILD":
       return {
@@ -21,6 +34,10 @@ const questionReducer = (state, action) => {
           action.payload.child
         ),
       };
+
+    /* =========================
+       UPDATE QUESTION
+    ========================= */
 
     case "UPDATE_QUESTION":
       return {
@@ -33,6 +50,10 @@ const questionReducer = (state, action) => {
         ),
       };
 
+    /* =========================
+       DELETE QUESTION
+    ========================= */
+
     case "DELETE_QUESTION":
       return {
         ...state,
@@ -40,6 +61,16 @@ const questionReducer = (state, action) => {
           state.questions,
           action.payload
         ),
+      };
+
+    /* =========================
+       REORDER QUESTIONS
+    ========================= */
+
+    case "REORDER_QUESTIONS":
+      return {
+        ...state,
+        questions: action.payload,
       };
 
     default:

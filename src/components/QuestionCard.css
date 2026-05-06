@@ -170,3 +170,42 @@
     justify-content: center;
   }
 }
+
+/* =========================
+   HEADER LEFT
+========================= */
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* =========================
+   DRAG ICON
+========================= */
+
+.drag-icon {
+  color: #94a3b8;
+
+  display: flex;
+  align-items: center;
+
+  cursor: grab;
+}
+
+.drag-icon:active {
+  cursor: grabbing;
+}
+
+/* =========================
+   DRAGGING
+========================= */
+
+.question-card {
+  cursor: grab;
+}
+
+.question-card:active {
+  cursor: grabbing;
+}

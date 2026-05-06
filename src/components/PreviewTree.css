@@ -63,10 +63,14 @@
 ========================= */
 
 .tree-content {
-  background: #f8fafc;
+  background: white;
+
+  border-radius: 16px;
+
+  padding: 14px 18px;
+
   border: 1px solid #e2e8f0;
-  border-radius: 18px;
-  padding: 20px 24px;
+
   transition: 0.3s ease;
 }
 
@@ -143,9 +147,14 @@
     padding: 22px;
   }
 
-  .preview-tree-title {
-    font-size: 28px;
-  }
+ .preview-tree-title {
+  font-size: 28px;
+  font-weight: 800;
+
+  margin-bottom: 24px;
+
+  color: #0f172a;
+}
 
   .tree-question {
     font-size: 16px;
